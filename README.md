@@ -1,5 +1,23 @@
 ## Windows and Powershell
 
+# Protecciones de windows
+
+## User Account Control (UAC)
+
+¿Cómo funciona UAC? Cuando un usuario con un tipo de cuenta de administrador inicia sesión en un sistema, la sesión actual no se ejecuta con permisos elevados. Cuando se necesita ejecutar una operación que requiere privilegios de nivel superior, se le pedirá al usuario que confirme si permite que se ejecute la operación.
+
+# Management 
+
+## Configuracion 
+
+>msconfig
+>taskmsg
+
+## Local User and Group Management
+
+Maneja usuarios y grupos
+
+>lusrmgr.msc
 
 ### NTFS Alternate Data Stream ADS
 
