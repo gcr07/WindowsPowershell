@@ -10,8 +10,22 @@
 
 ## Configuracion 
 
->msconfig
->taskmsg
+>msconfig // configuraciones 
+
+>taskmsg // Ctrl alt supr procesos y ahora mas 
+
+>control.exe // Abre el panel de control
+
+>  Computer Management (compmgmt) utility has three primary sections: System Tools, Storage, and Services and Applications.
+
+## Visor de eventos 
+
+Existen 5 tipos de eventos diferentes https://docs.microsoft.com/en-us/windows/win32/eventlog/event-types
+
+## Windows Logs (Registros de Windows)
+
+Existen 5 tipos de Logs https://docs.microsoft.com/en-us/windows/win32/eventlog/eventlog-key
+
 
 ## Local User and Group Management
 
