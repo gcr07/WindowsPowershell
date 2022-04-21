@@ -194,8 +194,11 @@ Para ejecutar
 
 >.\firstscript.ps1
 
+# PowerShell ISE ( Es un IDE para programar scripts de powershell como el visualstudio code cuando programas con nodejs)
 
+El entorno de scripts integrados de Windows PowerShell (ISE) es el editor predeterminado de Windows PowerShell. En este ISE, puedes ejecutar comandos, pruebas de escritura y depuración de scripts en una ventana base del entorno GUI. Puedes hacer edición multilínea, coloración de sintaxis, finalización de pestañas, ejecución selectiva y muchas otras cosas.
 
+Windows PowerShell ISE también te permite ejecutar comandos por consola. Sin embargo, también admite paneles que puedes usar para ver simultáneamente el código fuente de tu script y otras herramientas que puedes conectar al ISE.
 
 
 
