@@ -109,6 +109,8 @@ El Registro de Windows (según Microsoft) es una base de datos jerárquica centr
 
 # Powershell
 
+NOTA:***Powershell es case insensitive*** no diferencia entre minisculas y mayusculas.
+
 ## Cmdlet de PowerShell (verbo-sustantivo y no en plural)
 
 Un cmdlet que también es llamado Command let es un comando ligero usado en el entorno de la ventana base de PowerShell. PowerShell invoca estos cmdlets en la línea de comandos. Puedes crear e invocar los cmdlets usando APIS de PowerShell.
@@ -139,13 +141,58 @@ Ejemplo:
 > New-Item -Path 'C:\ComoFriki' -ItemType Directory // crea un directorio
 
 
+## Variables especiales 
 
+> echo $Host
 
+1. $Error   Un array de objetos de error que muestran los errores más recientes.
+2. $Host Mostrar el nombre de la aplicación de hosting actual.
+3. $Profile Almacena la ruta completa de un perfil de usuario para el shell por defecto.
+4. $PID  Almacena el identificador del proceso.
+5. $PSUICulture   Lleva el nombre de la UI Culture actual.
+6. $NULL Contiene un valor vacío o NULL.
+7. $False   Contiene el valor FALSO.
+8. $True Contiene el valor VERDADERO.
 
+## Scripts de PowerShell
 
+Los Scripts de Powershell se almacenan en un archivo .ps1. De forma predeterminada, ***NO se puede ejecutar un script con sólo hacer doble clic en el archivo***. Esto protege tu sistema de daños accidentales. 
 
+### política que restringe la ejecución del script ( que tampoco permite que se ejecuten scripts)
 
+#### Restricted  
+No se permiten los scripts. Esta es la configuración predeterminada, por lo que se mostrará por primera vez que ejecutes el comando.
 
+#### AllSigned 
+Puedes ejecutar scripts firmados por un desarrollador de confianza. Con la ayuda de esta configuración, un script te pedirá confirmación de que quieres ejecutarlo antes de hacerlo.
+
+#### RemoteSigned
+Puedes ejecutar tus scripts firmados por un desarrollador de confianza
+
+#### Unrestricted 
+Puedes ejecutar cualquier script que desees.
+
+***Cambiar la Politica de Ejecucion***
+
+1. Get-ExecutionPolicy.
+2. Set-executionpolicy unrestricted .
+3. Escriba "S" en el indicador.
+4. Get-ExecutionPolicy
+
+## First scritp
+
+& is the call operator which allows you to execute a command, a script, or a function.
+
+firstscript.ps1
+```
+Write-Host "Hola, ComoFriki!"
+```
+
+Para ejecutar
+
+>& "C:\PrimerScript.ps1"
+
+>.\firstscript.ps1
 
 
 
