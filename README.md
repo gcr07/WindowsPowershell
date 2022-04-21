@@ -2,6 +2,12 @@
 
 ## Protecciones de windows
 
+### DEP 
+
+Prevención de ejecución de datos es una característica de seguridad incluida en sistemas operativos modernos. Está disponible en los sistemas operativos Linux, Mac OS X, y Microsoft Windows y su función es la de prevenir que una aplicación o servicio se ejecute desde una región de memoria no ejecutable.
+
+### ASLR
+
 ### User Account Control (UAC)
 
 ¿Cómo funciona UAC? Cuando un usuario con un tipo de cuenta de administrador inicia sesión en un sistema, la sesión actual no se ejecuta con permisos elevados. Cuando se necesita ejecutar una operación que requiere privilegios de nivel superior, se le pedirá al usuario que confirme si permite que se ejecute la operación.
@@ -105,6 +111,9 @@ cmd.exe /C     Run Command and then terminate
 ### Registro de Windows
 
 El Registro de Windows (según Microsoft) es una base de datos jerárquica central que se utiliza para almacenar la información necesaria para configurar el sistema para uno o más usuarios, aplicaciones y dispositivos de hardware.
+
+>HKEY_LOCAL_MACHINE = HKLM
+HKEY_CURRENT_USER = HKCU
 
 
 # PowerShell
