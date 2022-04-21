@@ -1,8 +1,8 @@
-## Windows and Powershell
+# Windows and Powershell
 
-# Protecciones de windows
+## Protecciones de windows
 
-## User Account Control (UAC)
+### User Account Control (UAC)
 
 ¿Cómo funciona UAC? Cuando un usuario con un tipo de cuenta de administrador inicia sesión en un sistema, la sesión actual no se ejecuta con permisos elevados. Cuando se necesita ejecutar una operación que requiere privilegios de nivel superior, se le pedirá al usuario que confirme si permite que se ejecute la operación.
 
@@ -107,7 +107,36 @@ cmd.exe /C     Run Command and then terminate
 El Registro de Windows (según Microsoft) es una base de datos jerárquica central que se utiliza para almacenar la información necesaria para configurar el sistema para uno o más usuarios, aplicaciones y dispositivos de hardware.
 
 
+# Powershell
 
+## Cmdlet de PowerShell (verbo-sustantivo y no en plural)
+
+Un cmdlet que también es llamado Command let es un comando ligero usado en el entorno de la ventana base de PowerShell. PowerShell invoca estos cmdlets en la línea de comandos. Puedes crear e invocar los cmdlets usando APIS de PowerShell.
+
+Un cmdlet siempre consiste en un verbo y un sustantivo, separados por un guión. Algunos de los verbos principales que se usan para PowerShell, son:
+
+1. Get - conseguir algo.
+2. Start - Para ejecutar algo.
+3. Out - Para la salida de algo.
+4. Stop - Para detener algo que está corriendo.
+5. Set - Para definir algo.
+6. New - Para crear algo.
+7. Get Module: muestra paquetes de comandos.
+8. Get Content: Este cmdlet puede tomar un archivo y procesar su contenido y hacer algo con él.
+9. Get- get: Encuentra todos los cmdlets que empiezan con la palabra "get-".
+
+
+Ejemplo:
+
+>Get-Help Format-Table //Mostrar información de ayuda sobre el comando Format-Table.
+
+>Get-Command //Para generar una lista de cmdlets, funciones instaladas en tu máquina
+
+>Get-Service "vm*" //Encuentra todos los cmdlets con la palabra "servicio" en él.
+
+>Get-Service "vm*" | ***Get-Member*** //Mostrar lo que se puede hacer con un objeto.
+
+> New-Item -Path 'C:\ComoFriki' -ItemType Directory // crea un directorio
 
 
 
