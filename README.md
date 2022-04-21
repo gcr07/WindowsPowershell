@@ -77,6 +77,31 @@ cmd.exe /C     Run Command and then terminate
 >C:\WINDOWS\System32\cmd.exe /k %windir%\system32\ipconfig.exe
 
 
+
+>ver // Checa la version de windows
+
+>set L // el controlador de dominio al que estamos conectados
+
+>whoami /all /fo list // Get current user information, SID, domain, ***groups the user belongs to***, security privs of the user GRUPOS
+
+>whoami /groups 
+
+>net group "Remote Desktop Users" // solo lo deja usar en un controlador de dominio
+
+>ipconfig /all  // Ve el domino y los dns 
+
+>net localgroup "Administrators" // Display the list of local administrator accounts on the workstation 
+
+>net group "Domain Admins" /domain  //Display the list of domain administrator accounts
+
+>echo %LOGONSERVER% // ver el servidor a donde se autentica
+
+>nltest /dclist:MODELO // ver relaciones entre el host y la worstation
+
+>nltest /DSGETDC: // VEER A QUE    dominio estoy conectado
+
+
+
 # Registro de Windows
 
 El Registro de Windows (según Microsoft) es una base de datos jerárquica central que se utiliza para almacenar la información necesaria para configurar el sistema para uno o más usuarios, aplicaciones y dispositivos de hardware.
