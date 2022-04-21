@@ -200,6 +200,12 @@ El entorno de scripts integrados de Windows PowerShell (ISE) es el editor predet
 
 Windows PowerShell ISE también te permite ejecutar comandos por consola. Sin embargo, también admite paneles que puedes usar para ver simultáneamente el código fuente de tu script y otras herramientas que puedes conectar al ISE.
 
+## Variables
+
+Las variables se declaran en la forma $ <variable>.
+Las variables podrían ser usadas para mantener la salida de los comandos, objetos y valores.
+No es necesario especificar el "tipo" de una variable.
+          
 
 
 
