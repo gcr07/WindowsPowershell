@@ -26,12 +26,21 @@ Existen 5 tipos de eventos diferentes https://docs.microsoft.com/en-us/windows/w
 
 Existen 5 tipos de Logs https://docs.microsoft.com/en-us/windows/win32/eventlog/eventlog-key
 
+## Informacion del sistema
+
+>msinfo32 
+>resmon 
+
 
 ## Local User and Group Management
 
 Maneja usuarios y grupos
 
 >lusrmgr.msc
+
+## Windows Management Instrumentation (WMI) service
+
+La herramienta WMIC está obsoleta en Windows 10, versión 21H1 y la versión 21H1 del canal de disponibilidad general de Windows Server. Esta herramienta es reemplazada por Windows PowerShell para WMI. Nota: Esta obsolescencia solo se aplica a la herramienta de administración de línea de comandos. WMI en sí no se ve afectado.
 
 ### NTFS Alternate Data Stream ADS
 
@@ -50,7 +59,7 @@ Es la capacidad de bifurcar los datos en los archivos existentes sin cambiar o a
 Fuente:https://www.hackbysecurity.com/blog/ntfs-alternate-data-stream-ads
 
 
-# Comandos (no powershell)
+# Comandos cmd.exe (no powershell)
 
 >csript "textfile.txt:script.vbs" //ejecutar un script .vbs
 
@@ -61,7 +70,16 @@ msgbox "Este es un script simple"
 
 >dir /r // Mostrar archivos ocultos incluso muesta la ADS bifurcacion de datos
 
+cmd.exe /k ejecuta el comando y deja abierto Run Command and then remain open, at the CMD prompt.
+          This is useful for testing, e.g. to examine variables 
+cmd.exe /C     Run Command and then terminate
 
+>C:\WINDOWS\System32\cmd.exe /k %windir%\system32\ipconfig.exe
+
+
+# Registro de Windows
+
+El Registro de Windows (según Microsoft) es una base de datos jerárquica central que se utiliza para almacenar la información necesaria para configurar el sistema para uno o más usuarios, aplicaciones y dispositivos de hardware.
 
 
 
