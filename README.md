@@ -102,12 +102,12 @@ cmd.exe /C     Run Command and then terminate
 
 
 
-# Registro de Windows
+### Registro de Windows
 
 El Registro de Windows (según Microsoft) es una base de datos jerárquica central que se utiliza para almacenar la información necesaria para configurar el sistema para uno o más usuarios, aplicaciones y dispositivos de hardware.
 
 
-# Powershell
+# PowerShell
 
 NOTA:***Powershell es case insensitive*** no diferencia entre minisculas y mayusculas.
 
