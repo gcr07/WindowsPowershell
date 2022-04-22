@@ -106,6 +106,20 @@ cmd.exe /C     Run Command and then terminate
 
 >nltest /DSGETDC: // VEER A QUE    dominio estoy conectado
 
+### Comandos comunes
+
+>date
+>hostname
+>systeminfo 
+>netstat -ano | findstr "puerto"
+>tasklist /FI "PID eq 1000"
+
+Para SQL ejecutat el query
+
+select @@VERSION
+
+>openssl s_client-connect ip:port -tls1
+
 
 
 ### Registro de Windows
@@ -148,6 +162,8 @@ Ejemplo:
 >Get-Service "vm*" | ***Get-Member*** //Mostrar lo que se puede hacer con un objeto.
 
 > New-Item -Path 'C:\ComoFriki' -ItemType Directory // crea un directorio
+
+>Get-WmiObject -Class Win32_Product | Select-Object -Property Name //regresa todos los programas instalados
 
 
 ## Variables especiales 
