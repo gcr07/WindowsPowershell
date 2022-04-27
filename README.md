@@ -109,10 +109,15 @@ cmd.exe /C     Run Command and then terminate
 ### Comandos comunes
 
 >date
+
 >hostname
+
 >systeminfo 
+
 >netstat -ano | findstr "puerto"
+
 >tasklist /FI "PID eq 1000"
+
 
 Para SQL ejecutat el query
 
