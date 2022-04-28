@@ -236,7 +236,19 @@ Las variables se declaran en la forma $ <variable>.
 Las variables podrían ser usadas para mantener la salida de los comandos, objetos y valores.
 No es necesario especificar el "tipo" de una variable.
           
-
+## Man de PowerShell
+          
+          
+Para utilizar la ayuda como tipo man de linux en windows se usa:
+          
+>help Net-NewFirewallRule -Detailed
+          
+### Actualizar la ayuda 
+          
+          
+Para mantener actualizado la ayuda(man) ejecuta:
+          
+>Update-Help
           
 ## Administrador de sesion actual¿?
 
@@ -295,5 +307,8 @@ Para mostrar en forma de tabla se puede usar asi
           
 Nota: Action -Fist 10 solo mostrara las primeras 10 filas algo asi como head o tail en Linux
           
+Ejemplo Mostrar reglas de firewall para el SSH
+          
+>Get-NetFirewallRule | Select-Object DisplayName, Enabled, Direction, Action | Select-String "SSH"
           
           
