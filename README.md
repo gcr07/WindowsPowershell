@@ -237,7 +237,25 @@ Las variables podrían ser usadas para mantener la salida de los comandos, objet
 No es necesario especificar el "tipo" de una variable.
           
 
+          
+## Administrador de sesion actual¿?
 
+ Algunas tareas necesitan ciertos privilegios de administrador para poder ejecutarse, por lo que conocer si nuestra sesión dispone, o no, de esta capacidad es una información relevante a la hora de trabajar desde PowerShell. Hoy vamos a ver como verificar permisos de admin en PowerShell para poder tener mayor control de nuestros scripts y, de paso, seguir aprendiendo.
+
+Existe dentro de la documentación de Microsoft un artículo en la base de conocimiento que define el SID (Security Identifier) que presentan los administradores dentro de nuestro Sistema Operativo. El artículo que hace referencia a esta información es KB243330 y el SID que presentan los administradores es S-1-5-32-544.
+          
+ >SID: S-1-5-32-544 Nombre: Administradores Descripción: Un grupo integrado. Después de la instalación inicial del sistema operativo, el único miembro del grupo es la cuenta de Administrador. Cuando una computadora se une a un dominio, el grupo de administradores de dominio se agrega al grupo de administradores. Cuando un servidor se convierte en un controlador de dominio, el grupo Administradores de empresa también se agrega al grupo Administradores.
+          
+En base a lo anterior si el usuario tiene privilegios de administrador va a salir True
+          
+> [bool](([System.Security.Principal.WindowsIdentity]::GetCurrent()).groups -match"S-1-5-32-544")
+          
+Muestra toda la informacion 
+          
+Aqui lo puedes ver en la fila owner y tambien en Groups.
+          
+>  [System.Security.Principal.WindowsIdentity]::GetCurrent()          
+          
 
 
 
