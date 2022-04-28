@@ -257,5 +257,43 @@ Aqui lo puedes ver en la fila owner y tambien en Groups.
 >  [System.Security.Principal.WindowsIdentity]::GetCurrent()          
           
 
+## Grep de Powershell 
 
+          
+Existe un equivalente de "grep" para PowerShell tambien se pueden construir patrones complejos para buscar
+          
+          
+> Select-String "string_a_buscar"
+          
+Se pueden hacer uso de expresiones regulares pero para eso ver el ejemplo 
+          
+>  $employees | Select-String -Pattern 'Adam Bertram'
+          
+Fuente:https://www.ipswitch.com/es/blog/select-string-el-grep-de-powershell 
+          
+### Ayuda detallada
+          
+>help Select-String -Detailed
+          
+## Fiwewall de Windows via Powershell
+          
+Primero se necesita importar un modulo 
+ 
+>Import-Module -Name 'NetSecurity'
+          
+ ## Obtener reglas de Firewall
+                  
+ Se necesita tener importado el modulo anterior para esto
+          
+> Get-NetFirewallRule       
 
+Para mostrar en forma de tabla se puede usar asi 
+          
+          
+> Get-NetFirewallRule | Select-Object DisplayName, Enabled, Direction, Action -First 10
+
+          
+Nota: Action -Fist 10 solo mostrara las primeras 10 filas algo asi como head o tail en Linux
+          
+          
+          
