@@ -250,6 +250,15 @@ Para mantener actualizado la ayuda(man) ejecuta:
           
 >Update-Help
           
+          
+## Whatif
+          
+          
+
+Sirve para ver que va a hacer el comando par ano equivocarse solo pon:
+          
+>Comando -WhatIf          
+          
 ## Administrador de sesion actual¿?
 
  Algunas tareas necesitan ciertos privilegios de administrador para poder ejecutarse, por lo que conocer si nuestra sesión dispone, o no, de esta capacidad es una información relevante a la hora de trabajar desde PowerShell. Hoy vamos a ver como verificar permisos de admin en PowerShell para poder tener mayor control de nuestros scripts y, de paso, seguir aprendiendo.
@@ -311,4 +320,18 @@ Ejemplo Mostrar reglas de firewall para el SSH
           
 >Get-NetFirewallRule | Select-Object DisplayName, Enabled, Direction, Action | Select-String "SSH"
           
+          
+## Perfiles de Firewall 
+          
+Hay tres tipos de perfiles de red en el Firewall de Windows:
+
+Dominio – se aplica a las computadoras en un dominio de Active Directory
+Privado – redes domésticas o corporativas
+Público – redes públicas
+          
+Para indagar mas:
+          
+>https://reparar.info/configuracion-de-reglas-de-firewall-de-windows-con-powershell/     
+  
+          >https://diarioinforme.com/como-administrar-las-reglas-del-firewall-de-windows-con-powershell/
           
