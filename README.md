@@ -333,5 +333,21 @@ Para indagar mas:
           
 >https://reparar.info/configuracion-de-reglas-de-firewall-de-windows-con-powershell/     
   
-          >https://diarioinforme.com/como-administrar-las-reglas-del-firewall-de-windows-con-powershell/
+>https://diarioinforme.com/como-administrar-las-reglas-del-firewall-de-windows-con-powershell/
+          
+>https://docs.microsoft.com/en-us/windows/security/threat-protection/windows-firewall/windows-firewall-with-advanced-security-administration-with-windows-powershell
+          
+ >https://docs.microsoft.com/en-us/powershell/module/netsecurity/new-netfirewallrule?view=windowsserver2022-ps        
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
           
