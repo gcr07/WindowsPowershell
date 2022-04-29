@@ -341,6 +341,10 @@ Para indagar mas:
           
           
           
+## Checar status de un servicio
+          
+          
+>Get-Service -Name ssh*          
           
           
           
